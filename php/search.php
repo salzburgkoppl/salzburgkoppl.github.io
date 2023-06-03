@@ -8,10 +8,10 @@
 
     <?php
     // Datenbankverbindung herstellen
-    $servername = "localhost";
-    $username = "dein_username";
-    $password = "dein_passwort";
-    $dbname = "deine_datenbank";
+    $servername = "sql7.freemysqlhosting.net";
+    $username = "sql7623425";
+    $password = "bljBipiwEd";
+    $dbname = "sql7623425";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
