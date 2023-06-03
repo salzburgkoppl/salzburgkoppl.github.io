@@ -1,42 +1,48 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-<head>
-    <title>Suchergebnisse</title>
-</head>
+  <head>
+    <title>Search</title>
+  </head>
 <body>
-    <h1>Suchergebnisse</h1>
+  
+<form action="search.php" method="GET">
+  <input type="text" name="query" placeholder="Search...">
+  <button type="submit">Search</button>
+</form>
 
-    <?php
-    // Datenbankverbindung herstellen
-    $servername = "sql7.freemysqlhosting.net";
-    $username = "sql7623425";
-    $password = "bljBipiwEd";
-    $dbname = "sql7623425";
+<?php
+// Establish a connection to the MySQL database
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "database_name";
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Überprüfen, ob die Verbindung erfolgreich war
-    if ($conn->connect_error) {
-        die("Verbindung fehlgeschlagen: " . $conn->connect_error);
-    }
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 
-    // Suchanfrage verarbeiten
-    $query = $_GET['query'];
+// Get the search query from the URL parameter
+$query = $_GET['query'];
 
-    $sql = "SELECT * FROM deine_tabelle WHERE spalte LIKE '%$query%'";
-    $result = $conn->query($sql);
+// SQL query to search for matching records
+$sql = "SELECT * FROM table_name WHERE column_name LIKE '%$query%'";
 
-    if ($result->num_rows > 0) {
-        // Ergebnisse anzeigen
-        while ($row = $result->fetch_assoc()) {
-            echo "<p>" . $row['spalte'] . "</p>";
-        }
-    } else {
-        echo "Keine Ergebnisse gefunden.";
-    }
+$result = $conn->query($sql);
 
-    // Verbindung schließen
-    $conn->close();
-    ?>
+// Display the search results
+if ($result->num_rows > 0) {
+  while($row = $result->fetch_assoc()) {
+    echo "<p>" . $row["column_name"] . "</p>";
+  }
+} else {
+  echo "No results found.";
+}
+
+// Close the database connection
+$conn->close();
+?>
 </body>
 </html>
