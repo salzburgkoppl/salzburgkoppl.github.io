@@ -1,10 +1,3 @@
- <!DOCTYPE html>
-<html>
-  <head>
-    <title>Search</title>
-  </head>
-<body>
-
 <?php
 // Establish a connection to the MySQL database
 $servername = "http://sql7.freemysqlhosting.net/";
@@ -39,5 +32,3 @@ if ($result->num_rows > 0) {
 // Close the database connection
 $conn->close();
 ?>
-</body>
-</html>

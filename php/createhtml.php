@@ -28,22 +28,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Create own Site</title>
-</head>
-<body>
-  <h1>Sign Up</h1>
-  <form method="post" enctype="multipart/form-data">
-    <label for="username">Benutzername:</label>
-    <input type="text" name="username" required>
-    <br>
-    <label for="html_file">HTML-Dokument:</label>
-    <input type="file" name="html_file" required accept=".html">
-    <br>
-    <input type="submit" value="Registrieren">
-  </form>
-</body>
-</html>
