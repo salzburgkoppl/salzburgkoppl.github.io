@@ -1,0 +1,1 @@
+document.write('(c) by Krefting');
