@@ -1,3 +1,9 @@
 body {
   background-image: Url('https://salzburgkoppl.github.io/css/images/main.jpg');
 }
+
+header {
+  position: fixed;
+  top: 0em;
+  right: 4pm; 
+}
