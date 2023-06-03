@@ -1,6 +1,13 @@
+<!DOCTYPE HTML PUBLIC "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Search</title>
+</head>
+<body>
+
 <?php
 // Establish a connection to the MySQL database
-$servername = "http://sql7.freemysqlhosting.net/";
+$servername = "sql7.freemysqlhosting.net";
 $username = "sql7623425";
 $password = "bljBipiwEd";
 $dbname = "sql7623425";
@@ -32,3 +39,6 @@ if ($result->num_rows > 0) {
 // Close the database connection
 $conn->close();
 ?>
+
+</body>
+</html>
