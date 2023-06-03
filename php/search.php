@@ -4,18 +4,13 @@
     <title>Search</title>
   </head>
 <body>
-  
-<form action="search.php" method="GET">
-  <input type="text" name="query" placeholder="Search...">
-  <button type="submit">Search</button>
-</form>
 
 <?php
 // Establish a connection to the MySQL database
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "database_name";
+$servername = "http://sql7.freemysqlhosting.net/";
+$username = "sql7623425";
+$password = "bljBipiwEd";
+$dbname = "sql7623425";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
