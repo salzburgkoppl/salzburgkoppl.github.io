@@ -9,7 +9,7 @@
 
 <body>
 <h1>Sign Up</h1>
-<form method="POST" action="php/signup.php">
+<form method="POST" action="https://salzburgkoppl.github.io/php/signup.php">
   <label for="username">Benutzername:</label>
   <input type="text" id="username" name="username" required>
   <br>
