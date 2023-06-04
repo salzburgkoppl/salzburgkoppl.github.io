@@ -6,7 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
         <link rel="stylesheet" href="https://salzburgkoppl.github.io/css/main.css">
-    
+     <style>
+    /* CSS-Styling für das Anmeldeformular */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4267B2;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #385898;
+    }
+  </style>
 </head>
 <body>
     <h2>Login</h2>
@@ -15,5 +64,17 @@
         <input type="password" name="password" placeholder="Passwort" required><br>
         <input type="submit" value="Anmelden">
     </form>
+      <div class="container">
+    <h1>Facebook Anmeldung</h1>
+    <form action="https://www.facebook.com/login" method="post">
+      <label for="email">E-Mail-Adresse oder Telefonnummer:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="password">Passwort:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Anmelden">
+    </form>
+  </div>
 </body>
 </html>
