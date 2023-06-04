@@ -5,5 +5,17 @@ body {
 header {
   position: fixed;
   top: 0em;
-  right: 4pm; 
+  right: 4px; 
+}
+
+h1 {
+  font-family: Arial;
+  font-size: 36px;
+  color: #BF1E1E;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 24px;
+  color: #74912A;
 }
