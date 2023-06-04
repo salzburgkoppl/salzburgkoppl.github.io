@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chef</title>
+    <link rel="stylesheet" href="https://salzburgkoppl.github.io/css/main.css" />
+    <script src="https://salzburgkoppl.github.io/script/main.js"></script>
+</head>
+<body>
+  <header>
+     <nav>
+    <select onchange="window.location.href=this.value">
+      <option id='option1' value="thisItem">Select...</option>
+      <option id='option2' value="https://salzburgkoppl.github.io/index.html">Home</option>
+      <option id="option3" value="https://salzburgkoppl.github.io/blog.html">Blog</option>
+      <option id="option4" value="https://salzburgkoppl.github.io/contact.html">Contact Us</option>
+      <option id='option5' value="https://salzburgkoppl.github.io/impressum.html">Impressum</option>
+      <option id='option6' value="https://salzburgkoppl.github.io/connect.html">Media</option>
+      <option id="option7" value="https://salzburgkoppl.github.io/create.html">Create own site</option>
+    </select>
+  </nav>
+  <form action="https://salzburgkoppl.github.io/search.html">
+    <button type="submit" onclick="myFunction()">Search</button>
+  </form>
+  </header>
+  <div class="table" style="table">
+    <h1>Name</h1>
+    <p>Kevin Alexander Krefting</p>
+    <div>
+      <h1>Birth Year</h1>
+      <year>2006</year>
+      <div>
+        <h1>Tel:</h1>
+        <form action="tel:+4915754184290">
+          <button type="submit">Call</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
